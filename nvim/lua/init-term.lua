@@ -21,4 +21,5 @@ require("toggleterm").setup({
     },
 })
 
-vim.keymap
+vim.keymap.set("n", "<Leader>to", ":ToggleTerm<CR>")
+

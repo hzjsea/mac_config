@@ -28,7 +28,7 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
-local servers = { "pyright", "gopls" }
+local servers = { "pyright", "gopls","tsserver" }
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup({
         on_attach = on_attach,
@@ -81,3 +81,5 @@ nvim_lsp.jsonls.setup({
     on_attach = on_attach,
     capabilities = capabilities,
 })
+
+nvim_lsp.tsserver.setup{}

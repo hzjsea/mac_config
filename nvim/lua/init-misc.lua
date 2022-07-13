@@ -17,6 +17,8 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrwSettings = 1
 
+-- cursor move speed
+vim.o.cursorline = true
 -- Split to the right in vsplit
 vim.o.splitright = true
 -- Split to the bottom in split
@@ -42,6 +44,8 @@ vim.o.foldenable = false
 vim.o.signcolumn = "yes"
 -- Better completion
 vim.o.completeopt = "menu,menuone,noselect"
+
+
 
 -- Highlight on yank
 vim.cmd([[
